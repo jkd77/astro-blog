@@ -1,4 +1,5 @@
 ---
+import Head from '../components/Head.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import Foot from '../components/Foot.astro';
@@ -25,9 +26,8 @@ const textCase = "uppercase";
 ---
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>{pageTitle}</title>
+    <Head pageTitle={pageTitle} />
+
     <style define:vars={{skillColor, fontWeight, textCase}}>
         h1
         {
