@@ -1,23 +1,7 @@
 ---
-import Head from '../components/Head.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import Foot from '../components/Foot.astro';
-import '../styles/global.css';
-const pageTitle = "Home";
+import BaseLayout from '../layouts/BaseLayout.astro';
+const pageTitle = "Home Page";
 ---
-
-<html lang="en">
-	<head>
-		<Head pageTitle={pageTitle} />
-	</head>
-	<body>
-		<Header />
-		
-		<h1>{pageTitle}</h1>
-		<h2>My Astro Site Test</h2>
-
-		<Footer />
-		<Foot />
-	</body>
-</html>
+<BaseLayout pageTitle={pageTitle}>
+  <h2>My awesome blog subtitle</h2>
+</BaseLayout>
