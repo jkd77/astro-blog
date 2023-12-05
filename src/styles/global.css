@@ -24,6 +24,12 @@ h1
     font-size: 2.5rem;
 }
 
+.post-data 
+{
+    padding-left: 0;
+    list-style: none;
+}
+
 /* nav styles --------------------- */
 .hamburger
 {
