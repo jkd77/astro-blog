@@ -25,7 +25,7 @@ const { frontmatter } = Astro.props;
 
 <BaseLayout pageTitle={frontmatter.title}>
     <ul class="post-data">
-        <li class="post-date" transition:animate={fade({ duration: '0.75s' })}>{frontmatter.pubDate.slice(0,10)}</li>
+        <li class="post-date" transition:animate={fade({ duration: '0.75s' })}>{frontmatter.pubDate.toString().slice(0,10)}</li>
         <li class="post-description" transition:animate={fade({ duration: '1s' })}>{frontmatter.description}</li>
         <li class="post-author" transition:animate={fade({ duration: '1.25s' })}>Written by: <span class="post-author-name">{frontmatter.author}</span></li>
     </ul>
