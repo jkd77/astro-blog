@@ -3,6 +3,7 @@ import Head from '../components/Head.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import Foot from '../components/Foot.astro';
+import { slide } from 'astro:transitions';
 import '../styles/global.css';
 const { pageTitle } = Astro.props;
 ---
@@ -14,7 +15,7 @@ const { pageTitle } = Astro.props;
 	<body>
 		<Header />
 		
-		<h1>{pageTitle}</h1>
+		<h1 transition:animate={slide({ duration: '0.5s' })}>{pageTitle}</h1>
 		<slot />
 
 		<Footer />
